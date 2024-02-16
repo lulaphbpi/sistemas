@@ -117,7 +117,7 @@ try {
 
 	}else{
 	if(!$sqls==''){ //die($sqls);
-		//$f=ftrace('registrarCliente-p2.php', $sqls);
+		// $f=ftrace('registrarCliente-p2.php', $sqls);
 
 		$ex1=$conefi->query($sqls);
 	    if($ex1){
@@ -126,7 +126,7 @@ try {
 		}		
 	}	
 	$sql=$sql1;
-	//$f=ftrace('registrarCliente-p2.php', $sql);
+	// $f=ftrace('registrarCliente-p2.php', $sql);
 	$i1= $conefi->query($sql);
 	$hys=incluihystory('registrarCliente-p2.php', $sql, $usu, $conefi);
 	$conefi->commit();
