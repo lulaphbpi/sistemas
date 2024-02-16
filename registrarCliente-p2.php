@@ -117,7 +117,7 @@ try {
 
 	}else{
 	if(!$sqls==''){ //die($sqls);
-		$f=ftrace('registrarCliente-p2.php', $sqls);
+		//$f=ftrace('registrarCliente-p2.php', $sqls);
 
 		$ex1=$conefi->query($sqls);
 	    if($ex1){
