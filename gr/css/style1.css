@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	border:none;
+	padding:0;	
+}
+
+body {
+   background:#9FC5E9; 
+}
+
+#geral {
+    width:960px;
+	margin:10px auto;	
+	background:#E9E9E9;
+	border-top:10px solid #ACC792;
+}
+
+.logo {
+    width:60px;
+    height:60px;
+}	
+
+/***
+   Topo
+   contém o menu e o logotipo
+***/
+
+#topo h1 {
+    margin:2px;
+}
+
+#toposuperior {
+	width:100%;
+	height:65px; 
+	background-color:transparent; 
+	background-image:url('../imagens/agr-fam-rs0.jpg');
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+/*	background-position: 1px 0px;*/
+	background-position:right;
+}
+
+#ilogo {
+	width:10%;
+	height:60px;
+	float:left;
+}
+
+#fantasia {
+	width:55%;
+	float:left;
+}
+
+#login {
+	float:right;
+	color:#666;
+	font-size:11px;
+	font-style:oblique;
+	margin-top:10px;
+	margin-right:2px;
+}
+
+#login .ilogin {
+	border: solid 1px #E9E9E9; /* #1E90FF; /* #E0FFFF;*/
+	font-size:10px;
+	font-weight:bold;
+	color:#009;
+	width:100px;
+}
+
+#login .ibotaologin {
+	font-size:10px;
+	font-weight:bold;
+	color:#009;
+	width:40px;
+}
+
+#menutopo {
+	margin:0;
+	width:100%;
+	background:#CCC;
+}
+
+#topo #menutopo {
+	border-bottom:1px solid #FFF;
+	border-top:1px solid #B7B7B7;
+	overflow:hidden;
+}
+
+#topo #menutopo ul {
+	border-top:1px solid #FFF;
+	border-bottom:1px solid #B7B7B7;
+	overflow:hidden;
+}
+
+#topo #menutopo li {
+    display:inline;
+	list-style:none;
+}
+
+#topo #menutopo li a {
+	font:16px Trebuchet MS, Verdana, Arial, Tahoma, sans-serif;
+	text-decoration:none;
+	color:#1361A1;
+	float:left;
+	padding:5px 10px;
+}
+
+#topo #menutopo li a:hover {
+	background:#1361A1;
+	color:#FFF;
+}
+   
+#areaprincipal {
+	/*min-height:1000px;
+	height:500px;*/
+	display:inline;
+    margin:0px;
+	border:none;
+/*    border-bottom:1px solid #FFF; 
+	border-top:1px solid #B7B7B7; */
+	clear:both;
+	overflow:auto;
+}
+
+#areaprincipal #menuesquerda {
+	width:20%;
+	background-color: #E9E9E9;
+	min-height:450px;
+	margin:0px;
+    font:16px Trebuchet MS, Verdana, Arial, Tahoma, sans-serif;
+	float:left;
+	overflow:hidden;
+}
+
+#areaprincipal #menuesquerda h3 {
+    margin:20px;
+	/*text-align:center;*/
+	font:16px Trebuchet MS, Verdana, Arial, Tahoma, sans-serif;
+	text-decoration:none;
+	color:#1361BF;
+	font-weight:bold;
+	/*
+	font-size:14px;
+	color:#03F; */
+}
+
+#areaprincipal #menuesquerda ul {
+/*
+	border-top:1px solid #FFF;
+	border-bottom:1px solid #B7B7B7;
+*/
+	overflow:hidden;
+}
+   
+#areaprincipal #menuesquerda li {
+	/*display:block;*/
+	list-style:none;
+}
+   
+#areaprincipal #menuesquerda li a {
+	font:16px Trebuchet MS, Verdana, Arial, Tahoma, sans-serif;
+	text-decoration:none;
+	color:#1361A1;
+	/*float:left; */
+	margin:5px 5px 5px 20px;
+	padding:0px;
+}
+
+#areaprincipal #menuesquerda li a:hover {
+	background:#1361A1;
+	color:#FFF;
+}
+
+#areaprincipal #areadetrabalho {
+/*	border-bottom:1px solid #FFF;
+	border-top:1px solid #B7B7B7;*/
+	width:80%;
+	background:#fff;
+    margin:0px;
+	min-height:450px;
+    font:16px Trebuchet MS, Verdana, Arial, Tahoma, sans-serif;
+	float:left;
+}
+
+#areaprincipal #areadetrabalho h3 {
+    margin:10px;
+}
+
+#areaprincipal #areadetrabalho #areadetrabalhoexterna{
+/*	border-bottom:1px solid #FFF;
+	border-top:1px solid #B7B7B7; */
+	width:100%;
+    margin:10px;
+	/*min-height:1px;*/
+    font:16px Trebuchet MS, Verdana, Arial, Tahoma, sans-serif;
+	float:left;
+	overflow:hidden;
+}
+
+#rodape {
+	background:#CCC;
+	clear:left;
+    height:70px;
+    border-top:1px solid #fff;
+	border-bottom:1px solid #B7B7B7;
+	color:#006;
+}
+
+#rodapediv1 {
+    margin:10px;
+	float:left;
+}
+
+#rodapediv2 {
+	margin:10px;
+	font-size:10px;
+	font-style:italic;
+	float:left;
+	text-align:center;
+}
+#rodapediv2 h3 {
+	margin-top:18px;
+}
+
+#rodape img {
+    width:50px;
+    height:50px; 
+}
+
+#tabat {
+	 width:100%;
+	 border:0px;
+	 cellpadding:0;
+	 cellspacing:0;
+}
+
+.tabelaareadetrabalho  {
+     width:70%;
+	 border:0;
+	 cellpadding:0;
+	 cellspacing:0;
+}
+
+

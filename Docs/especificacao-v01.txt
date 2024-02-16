@@ -1,0 +1,39 @@
+Especificação Base
+
+1.  Descrição
+	O Sistema para a Clínica Escola de Fisioterapia da UFDPar objetiva gerenciar marcações e acompanhamento dos serviços de fisioterapia oferecidos pela clínica à comunidade em geral.
+
+2.  Público Alvo
+	O serviços serão ofertados ao seguinte público alvo:
+Professores
+Alunos
+Funcionários
+Comunidade em geral
+
+
+3.  Serviços:
+Destacam-se como serviços oferecidos pela clínica os listados a seguir:
+Fisioterapia Músculo-esquelética
+Fisioterapia Neuro Funcional
+Fisioterapia em Pediatria
+Fisioterapia Cárdio-Pulmonar
+Fisioterapia Saúde do Homem e da Mulher
+Fisioterapia Aquática
+
+4. Especificação Inicial
+Esta especificação considera um ciclo de atendimento, ou seja, descreve desde a solicitação inicial do paciente até a conclusão do tratamento, simplificado pelo gráfico abaixo:
+Atendimento -> Cadastro -> Avaliação Física -> Agendamento -> Tratamento -> Alta
+	O sistema de atendimento considera um limite de vagas por tipo de serviço e define um agendamento ou pré-marcação para cada atendimento. Isto significa que cada tipo de serviço possui um limite de atendimentos dentro de um período específico (a definir) e para isso cada atendimento obedece a um agendamento pré-definido. 
+No início do atendimento são coletados os dados pessoais do paciente (nome, sexo, data nascimento, telefone, endereço, etc) e é definido qual o tipo de atendimento (serviço) que será realizado. Em seguida o paciente retorna para casa e fica aguardando uma ligação telefônica para saber data e hora de comparecer para realização da avaliação física e agendamento do tratamento. Durante a avaliação física são registrados os dados sintomáticos do paciente. Os dados sintomáticos definem uma anamnese médica, considerando um roteiro de questões previamente registrado para cada tipo de serviço. 
+O atendimento pode ser feito ou por um estagiário regularizado ou por um fisioterapeuta. Cada atendimento é supervisionado ou por um fisioterapeuta ou por um professor regularizado. A palavra regularizado significa, aqui, cadastrado e autorizado no sistema. Os fisioterapeutas, é claro, devem ser também regularizados.
+O agendamento é limitado ao limite de vagas por tipo de serviço e o tratamento deve obedecer seguindo o agendamento. 
+Ao longo do tratamento um histórico de cada paciente pode ser mantido, registrando as ocorrências pelo atendente do respectivo paciente até a conclusão do tratamento.
+Desde o atendimento inicial até a conclusão do tratamento, o registro do paciente passa por uma série de status definidos como a seguir:
+- Cadastrado - o paciente está cadastrado
+- Em avaliação - o paciente está sob avaliação física
+- Aguardando vaga - o paciente está aguardando vaga para agendar um tratamento
+- Agendado - o paciente tem seu tratamento agendado
+- Em tratamento - o paciente iniciou um tratamento
+- Suspensão - o tratamento foi suspenso
+- Alta - o paciente alcançou a alta
+

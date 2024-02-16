@@ -1,0 +1,5 @@
+14/02/2020
+
+1. Avaliação Física
+	- Esta página, fConsultarAgenda-f1.php, serve para consultar quem está na lista para avaliação física. O resultado mostra o operador, o cliente, serviço, data e hora inicial, com status cadastrado. O operador deve clicar em "Avaliação Física" para continuar. Após, é exibida a página fRegistrarAvaliacaofisica-f1.php, na qual o operador seleciona o questionario a ser aplicado para o serviço. A lista de questionários para seleção é a mesma da tabela questionarioservico que contém, para cada serviço, os questionários aplicáveis.
+

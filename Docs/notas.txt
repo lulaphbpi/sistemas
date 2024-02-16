@@ -1,0 +1,20 @@
+AClinica
+
+Em 18/06/2018: Sobre tipos de menus
+
+1.Tipos de Menus
+	- adm : administrador pode fazer tudo
+	- rec : menu para tarefas da recepção
+	- col : menu para tarefas da coleta
+	- res : menu para tarefas de digitação de resultados
+	- ent : menu para tarefas de entrega de resultados
+
+2. Chamada padrão para "chameFormulario":
+
+	header("Location:chameFormulario.php?op=operacao&grp=adm&obj=objeto");
+
+3. Exemplo de chamada dentro de "chameFormulario"
+
+	$smenu='$'.'m'.$usu;
+	$sarq='$'.'f'.$op.$obj;
+	header("Location: start.php?plog=$flogado&pmen=$mprincipal&pmur=".$smenu."&parq=".$sarq");

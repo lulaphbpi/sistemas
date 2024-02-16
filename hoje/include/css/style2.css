@@ -1,0 +1,199 @@
+@charset "utf-8";
+/* CSS Document */
+
+#iformularioentrada {
+/*	border: 1px solid #00F;
+	width:50%; */
+	margin:0px;
+	padding:0px;
+	border:0px;
+	font:12px Trebuchet MS, Verdana, Arial, Tahoma, sans-serif;
+	text-decoration:none;
+	color:#1361BF;
+}
+
+#iformularioentrada h3 {
+	margin-bottom:0px;
+}
+
+#iformularioentrada .label {
+	width:25%;
+	text-align:right;
+}
+
+#iformularioentrada input{
+	border: 1px solid #00F;
+}
+
+#iformularioentrada #nome {
+	text-align:left;
+/*	width:250px; */
+}
+
+#iformularioentrada textarea{
+	border: 1px solid #00F;
+/*	height:50px;*/
+}
+
+#iformularioentrada .cradio {
+	border: 1px solid #00F;
+}
+
+#iformularioentrada .opcao {
+	margin-top:4px;
+	text-align:center;
+}
+
+#iformularioentrada th{
+	border: 1px solid #00F;
+}
+
+.peqtexto{
+	font-family: Verdana, Trebuchet MS, Verdana, Arial, Tahoma, sans-serif;
+    font-size:12px;
+    line-height: 110%;
+}
+
+.ciconeop{
+	border:1px solid #00F;
+	/*margin-left:5px;*/
+	padding:0;
+	/*display:inline;*/
+/*	width:250px;*/
+}
+
+.cid{
+	border:1px solid #00F;
+	text-align:right;
+	padding-right:5px;
+}
+
+.cdescricao{
+	border:1px solid #00F;
+	text-align:left;
+}
+
+#itablelink a:link {
+	text-decoration:none;
+	color:#1361BF;
+}    /* unvisited link */
+#itablelink a:visited {
+	text-decoration:none;
+	color:#00F;
+}    /* visited link */
+#itablelink a:hover {
+	text-decoration:underline;
+	color: #F00;
+}    /* mouse over link */
+#itablelink a:active {
+	text-decoration:underline;
+	color:#1361BF;
+}    /* selected link */
+
+#itablelink2 a:link {
+	text-decoration:none;
+	color:#1361BF;
+}    /* unvisited link */
+#itablelink2 a:visited {
+	text-decoration:none;
+	color:#00F;
+}    /* visited link */
+#itablelink2 a:hover {
+	text-decoration:underline;
+	color: #F00;
+}    /* mouse over link */
+#itablelink2 a:active {
+	text-decoration:underline;
+	color:#1361BF;
+}    /* selected link */
+
+#itablelink2 {
+	margin:0px;
+	font:12px Verdana, Trebuchet MS, Verdana, Arial, Tahoma, sans-serif;
+	font-weight:bold;
+	color:#1361BF;
+}
+
+.ccelula, .cdata{
+	border:1px solid #00F;
+	padding:0;
+}
+
+#idquemsomos, #idajuda, #idivlistausuarios {
+	margin:0px;
+	width:90%;
+	font:12px Verdana, Trebuchet MS, Verdana, Arial, Tahoma, sans-serif;
+	/*font-weight:bold;*/
+	color:#1361BF;
+}
+#idquemsomos span {
+	color:#006;
+	font-style:italic;
+	font-weight:bold;
+}	
+#idajuda span {
+	color:#006;
+	font-style:italic;
+	font-weight:bold;
+}	
+
+#iconsulta {
+	margin:0px;
+	font:12px Trebuchet MS, Verdana, Arial, Tahoma, sans-serif;
+	color:#1361BF;
+	width:90%;
+}
+
+#iconsulta img {
+    width:40px;
+    height:40px;
+	margin-right:5px;
+}
+
+#iconsulta #idivformulariopesquisa {
+	margin-left:50px;
+}
+
+#iultli {
+	float:right;
+}
+
+#iconsulta #ipesquisa { 
+	border:1px solid #00F;
+	width:250px;
+	margin-left:6px;
+	margin-right:6px;
+}
+
+#iconsulta #ibotaopesquisa {
+    width:80px;
+    height:20px;
+	
+}
+
+#iformulariousuario {
+/*	border: 1px solid #00F;
+	width:50%; */
+	margin:0px;
+	font:12px Trebuchet MS, Verdana, Arial, Tahoma, sans-serif;
+	text-decoration:none;
+	color:#1361BF;
+}
+#iformulariousuario h3 {
+	margin-bottom:15px;
+}
+
+#iformulariousuario .label {
+	width:25%;
+	text-align:right;
+}
+
+#iformulariousuario input{
+	border: 1px solid #00F;
+}
+
+#iformulariousuario #nome {
+	text-align:left;
+/*	width:250px; */
+}
+

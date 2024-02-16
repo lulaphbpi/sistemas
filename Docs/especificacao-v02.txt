@@ -1,0 +1,6 @@
+Regras gerais:
+
+- o estagiário poderá ver o histórico do paciente mas, apenas os registros feitos por ele (estagiário);
+
+- o estagiário poderá apagar qualquer registro de evolução de tratamento registrado por ele, desde que tal registro não tenha sido autorizado pelo professor;
+

@@ -1,0 +1,207 @@
+<script language="javascript" type="text/javascript">
+
+  function validar() {
+  var numero = document.getElementById("cns").value;
+
+
+  validaCNS_PROV(numero);
+  }
+
+  function validaCNS(vlrCNS) {
+  // FormulÃ¡rio que contem o campo CNS
+  var soma = new Number;
+  var resto = new Number;
+  var dv = new Number;
+  var pis = new String;
+  var resultado = new String;
+
+  pis = vlrCNS.substring(0, 11);
+  soma = (((Number(pis.substring(0, 1))) * 15) +
+  ((Number(pis.substring(1, 2))) * 14) +
+  ((Number(pis.substring(2, 3))) * 13) +
+  ((Number(pis.substring(3, 4))) * 12) +
+  ((Number(pis.substring(4, 5))) * 11) +
+  ((Number(pis.substring(5, 6))) * 10) +
+  ((Number(pis.substring(6, 7))) * 9) +
+  ((Number(pis.substring(7, 8))) * 8) +
+  ((Number(pis.substring(8, 9))) * 7) +
+  ((Number(pis.substring(9, 10))) * 6) +
+  ((Number(pis.substring(10, 11))) * 5));
+  resto = soma % 11;
+  dv = 11 - resto;
+  if (dv == 11) {
+  dv = 0;
+  }
+  if (dv == 10) {
+  soma = (((Number(pis.substring(0, 1))) * 15) +
+  ((Number(pis.substring(1, 2))) * 14) +
+  ((Number(pis.substring(2, 3))) * 13) +
+  ((Number(pis.substring(3, 4))) * 12) +
+  ((Number(pis.substring(4, 5))) * 11) +
+  ((Number(pis.substring(5, 6))) * 10) +
+  ((Number(pis.substring(6, 7))) * 9) +
+  ((Number(pis.substring(7, 8))) * 8) +
+  ((Number(pis.substring(8, 9))) * 7) +
+  ((Number(pis.substring(9, 10))) * 6) +
+  ((Number(pis.substring(10, 11))) * 5) + 2);
+  resto = soma % 11;
+  dv = 11 - resto;
+  resultado = pis + "001" + String(dv);
+  } else {
+  resultado = pis + "000" + String(dv);
+  }
+  if (vlrCNS != resultado) {
+  //ValidaCNS_PROV(vlrCNS);
+  alert("N\u00famero de CNS Inv\u00e1lido");
+  return false;
+  } else {
+  alert("N\u00famero de CNS V\u00e1lido");
+  return true;
+  }
+  }
+
+
+  function validaCNS_PROV(Obj) {
+
+  var tamCNS = Obj.length;
+
+  if ((tamCNS) == 0) {
+  return false;
+  }
+
+  if ((tamCNS) != 15) {
+  //alert("N\u00famero de CNS Inv\u00e1lido");
+  alert("N\u00famero de CNS Incorreto");
+  return false;
+  }
+
+
+  var pis;
+  var resto;
+  var dv;
+  var soma;
+  var resultado;
+  var result;
+  result = 0;
+
+  pis = Obj.substring(0, 15);
+
+  if (pis == "") {
+  return false;
+  }
+
+  if ((Obj.substring(0, 1) != "7") && (Obj.substring(0, 1) != "8") && (Obj.substring(0, 1) != "9")) {
+  ////alert("N\u00famero Provis\u00f3rio Inv\u00e1lido!");
+  //alert("N\u00famero de CNS Provis\u00f3rio Inv\u00e1lido");
+  validaCNS(Obj);
+  return false;
+  }
+
+  soma = ((parseInt(pis.substring(0, 1), 10)) * 15)
+  + ((parseInt(pis.substring(1, 2), 10)) * 14)
+  + ((parseInt(pis.substring(2, 3), 10)) * 13)
+  + ((parseInt(pis.substring(3, 4), 10)) * 12)
+  + ((parseInt(pis.substring(4, 5), 10)) * 11)
+  + ((parseInt(pis.substring(5, 6), 10)) * 10)
+  + ((parseInt(pis.substring(6, 7), 10)) * 9)
+  + ((parseInt(pis.substring(7, 8), 10)) * 8)
+  + ((parseInt(pis.substring(8, 9), 10)) * 7)
+  + ((parseInt(pis.substring(9, 10), 10)) * 6)
+  + ((parseInt(pis.substring(10, 11), 10)) * 5)
+  + ((parseInt(pis.substring(11, 12), 10)) * 4)
+  + ((parseInt(pis.substring(12, 13), 10)) * 3)
+  + ((parseInt(pis.substring(13, 14), 10)) * 2)
+  + ((parseInt(pis.substring(14, 15), 10)) * 1);
+
+  resto = soma % 11;
+
+  if (resto == 0) {
+  alert("N\u00famero de CNS Provis\u00f3rio V\u00e1lido");
+  return true;
+  }
+  else {
+  ////alert("N\u00famero Provis\u00f3rio Inv\u00e1lido!");
+  //alert("N\u00famero de CNS Provis\u00f3rio Inv\u00e1lido");
+  validaCNS(Obj);
+  return false;
+  }
+  }
+
+
+  function Onlynumbers(e) {
+  var tecla = new Number();
+  if (window.event) {
+  tecla = e.keyCode;
+  }
+  else if (e.which) {
+  tecla = e.which;
+  }
+  else {
+  return true;
+  }
+  //if ((tecla >= "97") && (tecla <= "122")) {
+  if ((tecla < "48") || (tecla > "57")) {
+                if (tecla != "13") {
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            }
+        }
+
+
+</script>
+<html>
+
+<head>
+</head>
+
+<body topmargin="12" marginheight="12">
+<font color="#999999" size="1"><b><font
+ color="#c0c0c0"></font>
+</b></font><font color="#999999" size="1"><b><font style="margin-left: 8px; margin-right: 8px;"
+ color="#808080" size="4">Rotina de Validação do Número do CNS <font
+ size="2">(Cartão Nacional de Saúde)</font></font></b><font
+ color="#808080"> </font></font>
+<hr>
+<p align="justify" style="margin-left: 8px"><font size="2" face="Tahoma">Rotina de Validação dos números definitivos e provisórios do CNS.</font></p>
+<p align="justify" style="margin-left: 8px"><font size="2" face="Tahoma"><b>O que é o Cartão Nacional de Saúde?</b></br>Para que o Cartão Nacional de Saúde seja implantado em todo o território nacional, o primeiro passo é o cadastramento da população. Com ele, são identificados os usuários dos serviços de saúde e do Sistema Único de Saúde (SUS) e seus domicílios.</font></p>
+<p align="justify" style="margin-left: 8px"><font size="2" face="Tahoma">O cadastro viabiliza a emissão do Cartão Nacional de Saúde para os usuários do Sistema Único de Saúde(SUS).</font></p>
+<p align="justify" style="margin-left: 8px"><font size="2" face="Tahoma"><a target="_top" href="http://gestao.saude.riopreto.sp.gov.br/transparencia/modules/mastop_publish/?tac=Serv_Cart_SUS">Cartão Nacional de Saúde (CNS) / Cartão SUS</a>.</font></p>
+<div style="text-align:center;"><font color="#000000"
+ size="2">
+</font>        <form name="form" action="javaScript: validar();">
+              <tr>
+                <td valign="middle" bgcolor="#FFFFFF">
+                  <table width="100%" border="0" cellpadding="4" cellspacing="0" class='normal'>
+                    <tr align="center">
+                      <td height='23'>
+                        <b>
+                          Informe o <font color='#d82523'>N&uacute;mero do CNS</font>
+                        </b>
+                      </td>
+                    </tr>
+                    <tr align="center">
+                      <td height='23'>
+                        <input id="cns" name="cns" type="text" title="cns" value="" size="15" maxlength="15"
+                            style="width: 110px" onkeypress="return Onlynumbers(event)" />
+                      </td>
+                    </tr>
+                    <tr align="center">
+                      <td height="35">
+                        <input id="btnValidar" type="submit" value="Validar" />
+                      </td>
+                    </tr>
+                    <tr align="center" valign='bottom'>
+                      <td height="50">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </form>
+			</font></p>
+</div>
+</body>
+</html>

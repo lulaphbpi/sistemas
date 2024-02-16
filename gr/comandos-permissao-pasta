@@ -1,0 +1,40 @@
+lula@lula-HP2 ~ $ sudo chown -R 771 /var/www/
+lula@lula-HP2 ~ $ ls -liah /var/
+total 48K
+4980737 drwxr-xr-x 12 root root     4,0K Mar 12  2015 .
+      2 drwxr-xr-x 24 root root     4,0K Dez 21 08:35 ..
+4980738 drwxr-xr-x  2 root root     4,0K Dez 22 07:35 backups
+4980739 drwxr-xr-x 16 root root     4,0K Mar 14  2015 cache
+4980740 drwxr-xr-x 74 root root     4,0K Dez 21 08:35 lib
+4980741 drwxrwsr-x  2 root staff    4,0K Abr 10  2014 local
+4980742 lrwxrwxrwx  1 root root        9 Mar 12  2015 lock -> /run/lock
+4980743 drwxrwxr-x 16 root syslog   4,0K Jan 19 07:35 log
+4980744 drwxrwsr-x  2 root mail     4,0K Nov 26  2014 mail
+4980745 drwxr-xr-x  2 root root     4,0K Nov 26  2014 opt
+4980746 lrwxrwxrwx  1 root root        4 Mar 12  2015 run -> /run
+4980747 drwxr-xr-x 10 root root     4,0K Nov 26  2014 spool
+4980748 drwxrwxrwt  2 root root     4,0K Jan 18 11:13 tmp
+4989806 d-w-----w-  5  771 www-data 4,0K Jan  8 09:38 www
+lula@lula-HP2 ~ $ sudo chown -R www-data:www-data /var/www/
+lula@lula-HP2 ~ $ sudo chmod -R 771 /var/www/
+lula@lula-HP2 ~ $ ls -liah /var/
+total 48K
+4980737 drwxr-xr-x 12 root     root     4,0K Mar 12  2015 .
+      2 drwxr-xr-x 24 root     root     4,0K Dez 21 08:35 ..
+4980738 drwxr-xr-x  2 root     root     4,0K Dez 22 07:35 backups
+4980739 drwxr-xr-x 16 root     root     4,0K Mar 14  2015 cache
+4980740 drwxr-xr-x 74 root     root     4,0K Dez 21 08:35 lib
+4980741 drwxrwsr-x  2 root     staff    4,0K Abr 10  2014 local
+4980742 lrwxrwxrwx  1 root     root        9 Mar 12  2015 lock -> /run/lock
+4980743 drwxrwxr-x 16 root     syslog   4,0K Jan 19 07:35 log
+4980744 drwxrwsr-x  2 root     mail     4,0K Nov 26  2014 mail
+4980745 drwxr-xr-x  2 root     root     4,0K Nov 26  2014 opt
+4980746 lrwxrwxrwx  1 root     root        4 Mar 12  2015 run -> /run
+4980747 drwxr-xr-x 10 root     root     4,0K Nov 26  2014 spool
+4980748 drwxrwxrwt  2 root     root     4,0K Jan 18 11:13 tmp
+4989806 drwxrwx--x  5 www-data www-data 4,0K Jan  8 09:38 www
+lula@lula-HP2 ~ $ sudo chown -R www-data:www-data /var/www/
+lula@lula-HP2 ~ $ sudo chmod -R 771 /var/www/
+lula@lula-HP2 ~ $ sudo chown -R www-data:www-data /var/www/gr/cadastraRelatorio.php 
+lula@lula-HP2 ~ $ sudo chmod -R 771 /var/www/gr/cadastraRelatorio.php lula@lula-HP2 ~ $ 
+

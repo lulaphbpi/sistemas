@@ -1,0 +1,12 @@
+Programando em php - Notas de acompanhamento
+
+1. É possível misturar _post com _get. 
+Observe fCadastrarPessoa-p1.php e cadastarPessoa-p1.php;
+
+2. Alterada estrutura para especificar médicos
+ . anteriormente era feito um cadastro simples contendo nome, crm e especialidade do médico
+ . agora, a estrutura de dados 'medico', em lugar do campo nome possui o campo 'pessoa_id', apontando para o id da estrutura pessoal.pessoa
+
+
+
+
